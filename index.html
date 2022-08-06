@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>PVSK</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+</head>
+<body>
+    
+    <div class="tela">
+    
+        <div class="game-start">
+            <h1 class="start-txt">
+                <span class="pk-color">Pikachu</span><span style="font-size: 85px;" class="vs-color">VS</span><span class="kb-color">Kirby</span>
+            </h1>
+            <img src="start.png" class="start">
+            <a href="start.html" class="btn-iniciar">Iniciar jogo</a>
+            <span class="instruction">Instrução: clique com o <span style="color: rgb(255, 137, 239);">botão esquerdo do mouse</span> para pular com o <span style="color: #EDE22E;">Pikachu</span>.
+        </div>
+
+        <div class="chars">
+            <img src="pika-s.gif" class="pika-s">
+            <img src="static-k.png" class="kirby-s">
+        </div>
+
+    </div>
+
+    <div class="grass"></div>
+    
+    <script>
+        var source = "pkmn.mp3"
+        var audio = document.createElement("audio");
+        
+        audio.autoplay = true;
+        
+        audio.load()
+        audio.addEventListener("load", function() { 
+            audio.play(); 
+        }, true);
+        audio.src = source;
+    </script>
+</body>
+</html>

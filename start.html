@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>PVSK</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+</head>
+<body>
+
+    <div class="tela">
+
+        <img src="clouds.png" class="clouds">
+        <img src="flappy-bird.gif" class="flappy-bird">
+        <img src="flappy-bird.gif" class="flappy-bird-2">
+
+        <div class="pontuacao">
+            Máxima Pontuação: <span class="pontuacao-hiscore"></span><br>
+            Pontuação: <span class="pontuacao-number">0</span>
+        </div>
+
+        <div class="display">
+
+            <div class="lose">
+                <h1 class="lose-txt">
+                    Você perdeu: o <span style="color: rgb(255, 137, 239);">Kirby</span> te <span style="color: rgb(255, 137, 239);">aviadou</span>.
+                </h1>
+                <a href="start.html" class="btn-restart">
+                    Jogar novamente
+                </a>
+                <a href="index.html" class="btn-parar">
+                    Sair
+                </a>
+            </div>
+
+        </div>
+
+        <img src="pika.gif" class="personagem">
+        <img src="kirby.gif" class="obstaculo">    
+        
+    </div>
+
+    <div class="ground"></div>
+    <div class="grass-m1"></div>
+
+    <script>
+        var source = "pkmnplay.mp3"
+       var audio = document.createElement("audio");
+       
+       audio.autoplay = true;
+       
+       audio.load()
+       audio.addEventListener("load", function() { 
+           audio.play(); 
+       }, true);
+       audio.src = source;
+   </script>
+
+</body>
+</html>
